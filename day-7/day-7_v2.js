@@ -125,3 +125,20 @@ const greetings2 = (name = "Peter") => {
 
 console.log(greetings2());
 console.log(greetings2("Ebubekir"));
+
+const fullName2 = (name = "Ebubekir", surName = "Demirkazık") => {
+  space = " ";
+  return name + space + surName;
+};
+
+console.log(fullName2());
+console.log(fullName2("Gizem", "Demirkazık"));
+
+// kısa yoldan arrow fuction
+
+const weightOfObject2 = (mass, gravity = 9.81) => mass * gravity + " N";
+
+console.log(weightOfObject2(100 , 1.62))
+console.log(weightOfObject2(90))
+
+
