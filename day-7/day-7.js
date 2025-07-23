@@ -171,7 +171,7 @@ function daireVeCember() {
     return a * a;
   }
 
-  //
+  // return etmemiz lazım ki dışarıya alalım. Console.log ile sadece içeride çalışır.
 
   let a = Number(prompt("Karenin Kenar Griniz: "));
   let KareAlan = alan(a);
@@ -183,10 +183,29 @@ function daireVeCember() {
 
   function toplam(daireAlan, KareAlan) {
     let toplam = daireAlan + KareAlan;
-    console.log("Toplam: " , toplam);
+    console.log("Toplam: ", toplam);
   }
 
   toplam(daireAlan, KareAlan);
 }
 
 daireVeCember();
+
+
+
+// çok parametreli fonksiyon
+console.log("çok parametreli")
+
+function sumArrayValues(arr) {
+  let sum = 0;
+
+  for (let i = 0; i <= arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(sumArrayValues(numbers));
+
+ 
